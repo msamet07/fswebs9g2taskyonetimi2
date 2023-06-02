@@ -3,7 +3,7 @@ import { formatDistanceToNow, differenceInDays } from "date-fns";
 import tr from "date-fns/locale/tr";
 
 const Task = ({ taskObj, onComplete }) => {
-  const formattedRemainingTime = formatDistanceToNow(
+const formattedRemainingTime = formatDistanceToNow(
     new Date(taskObj.deadline),
     { addSuffix: true, locale: tr }
   );
